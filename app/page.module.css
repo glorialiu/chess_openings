@@ -5,13 +5,15 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  background-color: #ebecd0;
 }
 
 .description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.85rem;
+  font-size: 1rem;
+  color: black;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
@@ -29,9 +31,9 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
-  border-radius: var(--border-radius);
+  /* background-color: rgba(var(--callout-rgb), 0.5); */
+  /* border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius); */
 }
 
 .code {
