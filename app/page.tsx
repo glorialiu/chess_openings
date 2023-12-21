@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Chessboard } from "react-chessboard";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -32,20 +31,10 @@ export default function Home() {
       <div className={styles.description}>
         <p>Opening Randomizer</p>
       </div>
-      <div>
+      <div className={styles.description}>{renderOpening()}</div>
+      <div className={styles.description}>
         <button onClick={newOpening}>New Opening!</button>;
       </div>
-      <div>hello</div>
-      <div>
-        <Chessboard
-          id="BasicBoard"
-          position="r1bqkbnr/pppppppp/2n5/8/4P3/8/PPPP1PPP/RNBQKBNR"
-          orientation="black"
-          showNotation={true}
-          draggable={true}
-        />
-      </div>
-      <div className={styles.description}>{renderOpening()}</div>
     </main>
   );
 }
