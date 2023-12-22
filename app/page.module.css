@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 3rem;
+  padding: 6rem 3rem 1rem;
   min-height: 100vh;
   background-color: #ebecd0;
 }
@@ -33,3 +33,24 @@
   font-family: var(--font-mono);
   text-align: center;
 }
+
+.board {
+  width: 300px;
+
+}
+
+.footer {
+  background-color: #ebecd0;
+  /* border-top: 1px solid #ebecd0; */
+  text-align: right;
+  padding: 25px 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 13px;
+  width: 100%;
+  color: #abaeb3;
+  font-size: .8rem;
+  font-family: var(--font-mono);
+};

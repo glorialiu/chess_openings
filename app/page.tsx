@@ -56,6 +56,19 @@ export default function Home() {
         </button>
         ;
       </div>
+      <div>
+        <div className={styles.footer}>
+          2024 ©{" "}
+          <a href="https://github.com/glorialiu/chess_openings">
+            <u>glo</u>
+          </a>
+          . openings powered by{" "}
+          <a href="https://github.com/hayatbiralem/eco.json">
+            <u>ECO</u>
+          </a>
+          .
+        </div>
+      </div>
     </main>
   );
 }
