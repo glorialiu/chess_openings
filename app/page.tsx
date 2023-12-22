@@ -9,8 +9,10 @@ interface opening {
   moves: string;
 }
 
+const INITIAL_INDEX = -1;
+
 export default function Home() {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(INITIAL_INDEX);
 
   function newOpening() {
     setIndex(getRandomInt(openingsJson.length));
@@ -24,10 +26,16 @@ export default function Home() {
   }
 
   function renderOpeningName() {
+    if (index == INITIAL_INDEX) {
+      return "";
+    }
     return openingsJson[index].name;
   }
 
   function renderOpeningMoves() {
+    if (index == INITIAL_INDEX) {
+      return "";
+    }
     return openingsJson[index].moves;
   }
 
