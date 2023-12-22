@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem 3rem 1rem;
+  padding: 6rem 3rem 0rem;
   min-height: 100vh;
   background-color: #ebecd0;
 }
@@ -16,7 +16,10 @@
   padding: 10px 30px;
   border-radius: 3px;
 }
-
+.bottomContainer {
+  padding: 0px 10px 250px;
+  bottom:0;
+}
 .title {
   font-size: 1.5rem;
   color: black;
@@ -27,11 +30,12 @@
 }
 
 .description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: black;
   width: 100%;
   font-family: var(--font-mono);
   text-align: center;
+  padding: 60px 0px 10px;
 }
 
 .board {

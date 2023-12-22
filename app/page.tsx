@@ -50,13 +50,12 @@ export default function Home() {
         <br />
         {renderOpeningName()}
       </div>
-      <div>
+      <div></div>
+      <div className={styles.bottomContainer}>
         <button className={styles.newOpeningButton} onClick={newOpening}>
           New Opening!
         </button>
         ;
-      </div>
-      <div>
         <div className={styles.footer}>
           2024 ©{" "}
           <a href="https://github.com/glorialiu/chess_openings">
