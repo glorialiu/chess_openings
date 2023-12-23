@@ -56,7 +56,7 @@ export default function Home() {
         <div className={styles.board}>
           <Chessboard
             position={renderOpeningFEN()}
-            width={"250"}
+            width={250}
             showNotation={false}
           />
         </div>
