@@ -1,5 +1,6 @@
 "use client";
 
+import Chessboard from "chessboardjsx";
 import { useState } from "react";
 import openingsJson from "../eco.json";
 import styles from "./page.module.css";
@@ -39,10 +40,26 @@ export default function Home() {
     return openingsJson[index].moves;
   }
 
+  function renderOpeningFEN() {
+    if (index == INITIAL_INDEX) {
+      return "start";
+    }
+    return openingsJson[index].fen;
+  }
+
   return (
     <main className={styles.main}>
       <div className={styles.title}>
         <p>Opening Randomizer</p>
+      </div>
+      <div>
+        <div className={styles.board}>
+          <Chessboard
+            position={renderOpeningFEN()}
+            width={"250"}
+            showNotation={false}
+          />
+        </div>
       </div>
       <div className={styles.description}>
         {renderOpeningMoves()}

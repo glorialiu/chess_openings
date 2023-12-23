@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "chessboardjsx": "^2.4.7",
     "fs": "^0.0.1-security",
     "next": "14.0.4",
     "react": "^18",
