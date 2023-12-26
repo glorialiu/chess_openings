@@ -53,7 +53,11 @@ export default function Home() {
         <p>Opening Randomizer</p>
       </div>
       <div className={styles.board}>
-        <Chessboard position={renderOpeningFEN()} boardWidth={250} />
+        <Chessboard
+          position={renderOpeningFEN()}
+          boardWidth={250}
+          showBoardNotation={false}
+        />
       </div>
       <div className={styles.description}>
         {renderOpeningMoves()}
