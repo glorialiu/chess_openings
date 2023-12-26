@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { Chessboard } from "react-chessboard";
 import openingsJson from "../eco.json";
 import styles from "./page.module.css";
 
@@ -50,6 +51,9 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.title}>
         <p>Opening Randomizer</p>
+      </div>
+      <div className={styles.board}>
+        <Chessboard position={renderOpeningFEN()} boardWidth={250} />
       </div>
       <div className={styles.description}>
         {renderOpeningMoves()}
